@@ -6,6 +6,21 @@
     box-sizing: border-box;
 }
 
+.my-container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 720px) {
+  .my-container {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -21,6 +36,38 @@ ul, ol {
     list-style: none;
 }
 
-h1 {
-    color: blue;
+                                 /* this is navbar css */
+
+.nav-ul {
+    display: flex;
+    gap: 40px;
+    transition: background-color 0.3s ease;
+    color: #1E1E1E;
+    font-weight: 500;
+    font-size: 18px;
 }
+
+.nav-ul .nav-link:hover {
+    color: #FB7902 !important;
+}
+
+
+.nav-btn {
+    width: 160px;
+    height: 54px;
+    border-radius: 0px;
+}
+
+.nav-border {
+   border-bottom: 2px solid #CECCCC50;
+}
+
+.nav-main {
+    padding-bottom: 20px !important;
+}
+
+
+                                     /* this is hero section css */
+ .my-hero {
+    padding-top: 70px;
+ }                                    
