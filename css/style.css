@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .my-container {
   width: 100%;
-  padding-right: var(--bs-gutter-x, .75rem);
-  padding-left: var(--bs-gutter-x, .75rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -22,52 +22,51 @@
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 img {
-    width: 100%;
-    max-width: 100%;
-   vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
-                                 /* this is navbar css */
+/* this is navbar css */
 
 .nav-ul {
-    display: flex;
-    gap: 40px;
-    transition: background-color 0.3s ease;
-    color: #1E1E1E;
-    font-weight: 500;
-    font-size: 18px;
+  display: flex;
+  gap: 40px;
+  transition: background-color 0.3s ease;
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .nav-ul .nav-link:hover {
-    color: #FB7902 !important;
+  color: #fb7902 !important;
 }
 
-
 .nav-btn {
-    width: 160px;
-    height: 54px;
-    border-radius: 0px;
+  width: 160px;
+  height: 54px;
+  border-radius: 0px;
 }
 
 .nav-border {
-   border-bottom: 2px solid #CECCCC50;
+  border-bottom: 2px solid #cecccc50;
 }
 
 .nav-main {
-    padding-bottom: 20px !important;
+  padding-bottom: 20px !important;
 }
 
-
-                                     /* this is hero section css */
- .my-hero {
-    padding-top: 70px;
- }                                    
+/* this is hero section css */
+.my-hero {
+  padding-top: 70px;
+}
