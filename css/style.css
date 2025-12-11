@@ -8,7 +8,7 @@
 
 .my-container {
   width: 100%;
-  max-width: calc(100% - 160px); 
+  max-width: calc(100% - 160px);
   padding-left: var(--bs-gutter-x, 0.75rem);
   padding-right: var(--bs-gutter-x, 0.75rem);
   margin-left: auto;
@@ -17,7 +17,7 @@
 
 @media (max-width: 720px) {
   .my-container {
-    max-width: 100%; 
+    max-width: 100%;
   }
 }
 
@@ -74,17 +74,17 @@ ol {
 }
 
 .hero-title {
-    font-weight: 700;
-    padding-bottom: 20px;
-    font-size: 56px;
-    line-height: 125%;
+  font-weight: 700;
+  padding-bottom: 20px;
+  font-size: 56px;
+  line-height: 125%;
 }
 .hero-span {
-    color: #FB7902;
+  color: #fb7902;
 }
 
 .booking-btn {
-   margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .hero-img {
