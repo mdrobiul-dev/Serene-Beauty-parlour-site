@@ -6,13 +6,9 @@
   box-sizing: border-box;
 }
 
-body{
-    overflow: hidden;
-}
-
 .my-container {
   width: 100%;
-  max-width: calc(100% - 160px); /* 80px left + 80px right */
+  max-width: calc(100% - 160px); 
   padding-left: var(--bs-gutter-x, 0.75rem);
   padding-right: var(--bs-gutter-x, 0.75rem);
   margin-left: auto;
@@ -21,7 +17,7 @@ body{
 
 @media (max-width: 720px) {
   .my-container {
-    max-width: 100%; /* full width on mobile */
+    max-width: 100%; 
   }
 }
 
@@ -72,16 +68,26 @@ ol {
 
 /* this is hero section css */
 .my-hero {
-  padding-top: 60px;
+  padding-top: 40px;
   text-align: center;
   margin: auto;
 }
 
 .hero-title {
     font-weight: 700;
+    padding-bottom: 20px;
     font-size: 56px;
     line-height: 125%;
 }
 .hero-span {
     color: #FB7902;
+}
+
+.booking-btn {
+   margin-bottom: 40px;
+}
+
+.hero-img {
+  height: 100%;
+  object-fit: cover;
 }
