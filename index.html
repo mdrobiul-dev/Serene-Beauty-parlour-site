@@ -69,9 +69,8 @@
     <!-- this is hero section -->
 
     <section>
-      <div class="my-container">
+      <div class="container-fluid">
         <div class="my-hero">
-          <!-- <p>Where Tranquility Meets Transformation.</p> -->
           <h1 class="hero-title">
             We show your <span class="hero-span">skin,</span>
             <span class="hero-span">hair,</span> and <br />
@@ -83,7 +82,12 @@
           </button>
         </div>
         <!-- this is carosol -->
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="2000"
+        >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -135,7 +139,6 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -144,39 +147,107 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          ></div>
         </div>
-        <!-- this is after carosol  -->
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at
-          repudiandae optio facere harum tenetur quos saepe voluptate sint
-          impedit voluptatibus, iure officiis aspernatur corrupti dolores vel
-          enim sunt ex! Eveniet, dolorum aperiam obcaecati atque voluptates
-          corporis doloremque quasi minus porro natus reprehenderit
-          necessitatibus ullam nihil culpa repellendus rem. Vitae, provident
-          eaque rerum repudiandae sed illo voluptates facilis non placeat! Nihil
-          rem culpa doloremque, eum, omnis earum odio tenetur ipsum iure iste
-          optio asperiores quisquam ratione distinctio consectetur quidem dolor
-          ad quos soluta eligendi saepe velit? Nihil quis maiores aut. Optio
-          itaque facilis natus mollitia, ut ea et corporis debitis non a
-          deserunt sequi fugit fuga facere ipsa? Accusantium minima at
-          recusandae animi laboriosam! Libero sint provident dolore voluptate
-          corporis! Distinctio dolorum sapiente voluptates, officia sed velit
-          veniam esse veritatis animi cupiditate facere neque rem illum harum
-          itaque at a asperiores! Accusantium perspiciatis at alias aliquid,
-          sequi iusto magni dicta? Unde porro, eaque deserunt doloremque
-          voluptates qui asperiores debitis, iste aspernatur blanditiis,
-          suscipit tenetur quibusdam cupiditate laborum neque sit? Cum id
-          commodi quaerat accusamus totam vitae error, soluta accusantium et.
-          Hic nostrum excepturi aut non velit at harum, explicabo numquam
-          recusandae illo magni animi. Cum aspernatur harum impedit rem, dolor
-          repellendus dicta repellat aperiam tempore vel iste maxime officia
-          tempora?
+        <!-- this is after carousel  -->
+        <div class="colored-img">
+          <h2 class="serene-news">Serene News</h2>
+          <p class="dont-miss">
+            Don’t miss a thing. Sign up to receive news, special offers, and
+            updates.
+          </p>
+          <div class="input-div">
+            <input type="email" placeholder="Email Adress" class="hero-input" />
+            <button type="button" class="btn btn-light">Sign Up</button>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Explore Services section -->
+
+    <section>
+      <div class="my-container">
+        <div class="services-div">
+          <h2 class="service-details">
+            Enhance your inner radiance <br />
+            at our <span class="hero-span">beauty sanctuary</span> and <br />
+            let your true beauty shine.
+          </h2>
+          <button type="button" class="btn btn-dark nav-btn">
+            Explore Services
+          </button>
+        </div>
+        <div class="card-main">
+          <div class="card">
+            <img
+              src="/images/Hair.png"
+              class="card-img-top"
+              alt="Hair Salon Haven"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hair Salon Haven</h5>
+              <a href="#" class="btn btn-secondary">Explore Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/Waxing.png"
+              class="card-img-top"
+              alt="Hair Salon Haven"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Waxing Salon Haven</h5>
+              <a href="#" class="btn btn-secondary">Explore Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/images/Skincare.png"
+              class="card-img-top"
+              alt="Hair Salon Haven"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Skincare Salon Haven</h5>
+              <a href="#" class="btn btn-secondary">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-section">
+      <div class="container-fluid">
+        <h2 class="title">PRODUCTS WE ARE USING</h2>
+
+        <div class="logo-slider">
+          <div class="logo-track">
+            <img src="/images/logo2.jpg" />
+            <img src="/images/logo1.svg" />
+            <img src="/images/logo3.svg" />
+            <img src="/images/logo4.svg" />
+            <img src="/images/logo5.svg" />
+            <img src="/images/logo6.jpg" />
+            <img src="/images/logo17.svg" />
+
+            <img src="/images/logo1.svg" />
+            <img src="/images/logo2.jpg" />
+            <img src="/images/logo3.svg" />
+            <img src="/images/logo4.svg" />
+            <img src="/images/logo5.svg" />
+            <img src="/images/logo6.jpg" />
+            <img src="/images/logo17.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="/assets/bootstrap.bundle.min.js"></script>
   </body>
 </html>

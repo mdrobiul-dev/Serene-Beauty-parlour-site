@@ -37,6 +37,11 @@ ol {
   list-style: none;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: none; 
+}
+
 /* this is navbar css */
 
 .nav-ul {
@@ -90,4 +95,195 @@ ol {
 .hero-img {
   height: 100%;
   object-fit: cover;
+}
+
+#carouselExampleIndicators {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+}
+
+.carousel-indicators .active {
+  background-color: #fb7902 !important;
+}
+
+.carousel-inner {
+  height: 700px;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#carouselExampleIndicators {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators .active {
+  background-color: #fb7902;
+}
+
+/* Responsive heights */
+.carousel-inner {
+  height: 700px;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 300px;
+  }
+}
+
+/* after carousel  css */
+
+.colored-img {
+  background-image: url("/images/colored-bg.jpg");
+  width: 100%;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.serene-news {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+}
+
+.dont-miss {
+  color: white;
+  text-align: center;
+}
+
+.input-div {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ padding-bottom: 30px;
+}
+
+.hero-input {
+  padding: 10px;
+  border: #fdfaf7;
+
+}
+
+
+
+/* this is services section */
+
+.services-div {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-details {
+  color: #1E1E1E;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.card-main {
+  padding-top: 50px;
+  display: flex;
+  gap: 15px;
+
+}
+
+.card {
+  width: 100%;
+}
+
+.card-title {
+ margin-bottom: 20px !important;
+}
+
+
+/* Infinite Marquee */
+
+
+.logo-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.title {
+  color: black;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 28px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(300px * 14); 
+  animation: scroll 20s linear infinite;
+}
+
+.logo-track img {
+  width: 300px;
+  height: 300px;
+  margin: 0 30px;
+  object-fit: contain;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Animation loop */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
