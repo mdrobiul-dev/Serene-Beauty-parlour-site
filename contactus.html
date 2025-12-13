@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Serene Beauty</title>
+    <link rel="stylesheet" href="/css/contactus.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!--============================== Navigation =============================-->
+          <nav class="navbar navbar-expand-lg nav-border nav-main">
+      <div class="my-container">
+        <!-- Desktop Layout -->
+        <div class="desktop-nav">
+          <a class="navbar-brand" href="#">
+            <img src="/images/Logo.png" alt="Serene Beauty Logo" />
+          </a>
+
+          <ul class="navbar-nav nav-ul">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                FAQ
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">General Questions</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Booking & Appointments</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Policies</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <button type="button" class="btn btn-dark nav-btn">Login</button>
+        </div>
+
+        <!-- Mobile Toggler (hidden on desktop) -->
+        <div class="mobile-header">
+          <a class="navbar-brand" href="#">
+            <img src="/images/Logo.png" alt="Serene Beauty Logo" />
+          </a>
+
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mobile-nav">
+            <ul class="navbar-nav nav-ul">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMobile"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  FAQ
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMobile"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">General Questions</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Booking & Appointments</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Policies</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-dark nav-btn mobile-login-btn">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--============================== Hero Section ===============================-->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title">Get in <span class="primary-color">Touch</span></h1>
+                    <p class="hero-subtitle">We're here to help you with any questions about our services, bookings, or anything else. Reach out to us and let's start your beauty journey together.</p>
+                    <a href="#contact-form" class="cta-btn">
+                        Send a Message <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============================== Contact Information =============================-->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">How to <span class="primary-color">Reach Us</span></h2>
+                    <p class="section-subtitle">Choose your preferred method to connect with our team. We're always happy to hear from you.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Visit Our Salon</h3>
+                        <p class="contact-details">
+                            123 Beauty Street<br>
+                            Luxury District<br>
+                            City, State 10001<br>
+                            <a href="#location">Get Directions →</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="contact-title">Call Us</h3>
+                        <p class="contact-details">
+                            <a href="tel:+11234567890">(123) 456-7890</a><br>
+                            Mon-Fri: 9AM - 8PM<br>
+                            Sat: 9AM - 6PM<br>
+                            Sun: 10AM - 4PM
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">Email Us</h3>
+                        <p class="contact-details">
+                            <a href="mailto:info@serenebeauty.com">info@serenebeauty.com</a><br>
+                            For bookings: <a href="mailto:bookings@serenebeauty.com">bookings@serenebeauty.com</a><br>
+                            Response time: Within 24 hours
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================== Contact Form & Location ==========================-->
+    <section class="section-padding" style="background: white;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div id="contact-form">
+                        <h2 class="section-title mb-4">Send Us a <span class="primary-color">Message</span></h2>
+                        <p class="section-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select class="form-control" id="subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="booking">Booking Inquiry</option>
+                                    <option value="service">Service Information</option>
+                                    <option value="pricing">Pricing Inquiry</option>
+                                    <option value="feedback">Feedback & Reviews</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea class="form-control" id="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <div class="success-message" id="successMessage">
+                                <i class="fas fa-check-circle fa-2x mb-3"></i>
+                                <h4>Thank You!</h4>
+                                <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="location-section" id="location">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="location-image"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="location-content">
+                                    <h2 class="location-title">Our <span class="primary-color">Location</span></h2>
+                                    <div class="location-details">
+                                        <div class="location-detail-item">
+                                            <div class="location-detail-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div>
+                                                <strong>Address</strong><br>
+                                                123 Beauty Street, Luxury District<br>
+                                                City, State 10001
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="location-detail-item">
+                                            <div class="location-detail-icon">
+                                                <i class="fas fa-clock"></i>
+                                            </div>
+                                            <div>
+                                                <strong>Hours of Operation</strong><br>
+                                                Monday - Friday: 9AM - 8PM<br>
+                                                Saturday: 9AM - 6PM<br>
+                                                Sunday: 10AM - 4PM
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="location-detail-item">
+                                            <div class="location-detail-icon">
+                                                <i class="fas fa-parking"></i>
+                                            </div>
+                                            <div>
+                                                <strong>Parking</strong><br>
+                                                Complimentary valet parking available<br>
+                                                Street parking also accessible
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="cta-btn" style="width: 100%;">
+                                        <i class="fas fa-directions"></i> Get Directions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================================= Map Section ==================================-->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Find Us <span class="primary-color">Here</span></h2>
+                    <p class="section-subtitle">Use the map below to find the best route to our luxury beauty salon.</p>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt fa-3x mb-3" style="color: var(--primary-color);"></i>
+                        <p>Interactive Map Location<br>
+                        <small>(Would show Google Maps integration in production)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================================= FAQ Section ===============================-->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Frequently Asked <span class="primary-color">Questions</span></h2>
+                    <p class="section-subtitle">Find quick answers to common questions about our services and policies.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="faq-card" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            What is your cancellation policy?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We require 24 hours notice for cancellations. Appointments canceled with less than 24 hours notice may be subject to a cancellation fee of 50% of the service price. No-shows will be charged 100% of the service price.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-card" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            How far in advance should I book?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We recommend booking at least 2-3 weeks in advance for weekend appointments and 1-2 weeks for weekday appointments. For special occasions or multiple services, we suggest booking 4-6 weeks ahead to secure your preferred time slot.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-card" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            Do you accept walk-ins?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            While we primarily operate by appointment to ensure the best service for our clients, we do accommodate walk-ins based on availability. We recommend calling ahead to check same-day availability or booking online to guarantee your preferred time.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-card" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            What forms of payment do you accept?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We accept all major credit cards (Visa, MasterCard, American Express), debit cards, cash, and mobile payments (Apple Pay, Google Pay). We also offer gift cards that can be purchased online or in-salon.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-card" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            Do you offer services for special occasions?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes! We specialize in bridal packages, prom preparations, and other special occasion services. Our team will work with you to create a customized beauty plan for your big day. Contact us at least 6-8 weeks before your event for a consultation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================================= Booking CTA =====================================-->
+    <section class="booking-cta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="cta-title">Ready to Book Your Appointment?</h2>
+                    <p class="cta-text">Experience the Serene Beauty difference. Book your consultation today and begin your journey to radiant beauty.</p>
+                    <a href="#" class="cta-btn">
+                        Book Now <i class="fas fa-calendar-check"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===================================== Footer ======================================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="footer-logo">SERENE<span>BEAUTY</span></div>
+                    <p class="footer-text">Where tranquility meets transformation. Experience luxury beauty treatments that nurture your inner radiance.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Book Now</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Skincare</a></li>
+                        <li><a href="#">Hair Styling</a></li>
+                        <li><a href="#">Waxing</a></li>
+                        <li><a href="#">Nail Care</a></li>
+                        <li><a href="#">Spa Treatments</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Beauty Street, City</li>
+                        <li><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@serenebeauty.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Sat: 9AM-8PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Serene Beauty. All rights reserved. | <a href="#" style="color: rgba(255, 255, 255, 0.7);">Privacy Policy</a> | <a href="#" style="color: rgba(255, 255, 255, 0.7);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/assets/bootstrap.bundle.min.js"></script>
+    
+    <script>
+
+        // FAQ toggle functionality
+        function toggleFaq(element) {
+            // Close other open FAQs
+            document.querySelectorAll('.faq-card.active').forEach(card => {
+                if (card !== element) {
+                    card.classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

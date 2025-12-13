@@ -4,89 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css//style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="/assets/bootstrap.min.css" />
     <title>Serene Beauty</title>
   </head>
   <body>
-    <!-- this is navbar -->
+    <!--============================== this is navbar ============================-->
+
     <nav class="navbar navbar-expand-lg nav-border nav-main">
-      <div
-        class="my-container d-flex justify-content-between align-items-center"
-      >
-        <a class="navbar-brand" href="#">
-          <img src="/images/logo.png" alt="brand-logo" />
-        </a>
+      <div class="my-container">
+        <!-- Desktop Layout -->
+        <div class="desktop-nav">
+          <a class="navbar-brand" href="#">
+            <img src="/images/Logo.png" alt="Serene Beauty Logo" />
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse flex-grow-0"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav mb-2 mb-lg-0 w-100 nav-ul">
+          <ul class="navbar-nav nav-ul">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="index.html" aria-current="page"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">About Us</a>
+              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contact Us</a>
+              <a class="nav-link" href="contactus.html">Contact Us</a>
             </li>
-
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
+                id="navbarDropdown"
+                role="button"
                 data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                FQA
+                FAQ
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">General Questions</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Booking & Appointments</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else</a></li>
+                <li><a class="dropdown-item" href="#">Policies</a></li>
               </ul>
             </li>
           </ul>
+
+          <button type="button" class="btn btn-dark nav-btn">Login</button>
         </div>
 
-        <button type="button" class="btn btn-dark nav-btn">Login</button>
+        <!-- Mobile Toggler (hidden on desktop) -->
+        <div class="mobile-header">
+          <a class="navbar-brand" href="#">
+            <img src="/images/Logo.png" alt="Serene Beauty Logo" />
+          </a>
+
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mobile-nav">
+            <ul class="navbar-nav nav-ul">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMobile"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  FAQ
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMobile"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">General Questions</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Booking & Appointments</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Policies</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-dark nav-btn mobile-login-btn">
+              Login
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
 
-    <!-- this is hero section -->
+    <!--================================ this is hero section ==============================-->
 
-    <section>
-      <div class="container-fluid">
-        <div class="my-hero">
-          <h1 class="hero-title">
-            We show your <span class="hero-span">skin,</span>
-            <span class="hero-span">hair,</span> and <br />
-            <span class="hero-span">body</span> the care and attention <br />
-            they deserve.
-          </h1>
-          <button type="button" class="btn btn-dark nav-btn booking-btn">
-            Book Now
-          </button>
+    <section class="hero-section">
+      <!-- HERO CONTENT -->
+      <div class="hero-content">
+        <div class="my-container">
+          <div class="my-hero">
+            <h1 class="hero-title">
+              We show your <span class="hero-span">skin,</span>
+              <span class="hero-span">hair,</span> and
+              <span class="hero-span">body</span> the care and attention they
+              deserve.
+            </h1>
+            <p class="hero-subtitle">
+              Experience luxury beauty treatments that transform and rejuvenate
+            </p>
+            <button type="button" class="btn booking-btn btn-dark">
+              Book Now <span class="btn-arrow">→</span>
+            </button>
+          </div>
         </div>
-        <!-- this is carosol -->
+      </div>
+
+      <!-- CAROUSEL -->
+      <div class="carousel-wrapper">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
-          data-bs-interval="2000"
+          data-bs-interval="3000"
         >
           <div class="carousel-indicators">
             <button
@@ -115,21 +189,21 @@
               <img
                 src="/images/Image-slide-2.png"
                 class="d-block w-100"
-                alt="Image-slide-1"
+                alt="Luxury beauty salon interior"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="/images/Image-slide-3.jpg"
                 class="d-block w-100"
-                alt="Image-slide-1"
+                alt="Professional beauty treatment"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="/images/Image-slide-1.png"
                 class="d-block w-100"
-                alt="Image-slide-1"
+                alt="Relaxing spa experience"
               />
             </div>
           </div>
@@ -139,6 +213,7 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
+            <span class="carousel-control-icon">←</span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -147,82 +222,146 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
+            <span class="carousel-control-icon">→</span>
             <span class="visually-hidden">Next</span>
           </button>
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          ></div>
         </div>
-        <!-- this is after carousel  -->
-        <div class="colored-img">
-          <h2 class="serene-news">Serene News</h2>
-          <p class="dont-miss">
-            Don’t miss a thing. Sign up to receive news, special offers, and
-            updates.
-          </p>
-          <div class="input-div">
-            <input type="email" placeholder="Email Adress" class="hero-input" />
-            <button type="button" class="btn btn-light">Sign Up</button>
+      </div>
+
+      <!-- NEWSLETTER SECTION -->
+      <div class="newsletter-section">
+        <div class="my-container">
+          <div class="colored-img">
+            <div class="newsletter-content">
+              <h2 class="serene-news">Serene News</h2>
+              <p class="dont-miss">
+                Don't miss a thing. Sign up to receive news, special offers, and
+                updates.
+              </p>
+              <form class="newsletter-form">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="hero-input"
+                    aria-label="Email address"
+                    required
+                  />
+                  <button type="submit" class="btn subscribe-btn">
+                    Sign Up <span class="subscribe-arrow">→</span>
+                  </button>
+                </div>
+                <p class="privacy-note">
+                  By subscribing, you agree to our Privacy Policy and consent to
+                  receive updates.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Explore Services section -->
+    <!--=======================  Services section ======================-->
 
-    <section>
+    <section class="services-section">
       <div class="my-container">
-        <div class="services-div">
-          <h2 class="service-details">
-            Enhance your inner radiance <br />
-            at our <span class="hero-span">beauty sanctuary</span> and <br />
-            let your true beauty shine.
-          </h2>
-          <button type="button" class="btn btn-dark nav-btn">
-            Explore Services
+        <!-- HEADER SECTION -->
+        <div class="services-header">
+          <div class="services-content">
+            <h2 class="service-title">
+              Enhance your inner radiance
+              <span class="hero-highlight">at our beauty sanctuary</span>
+              and let your true beauty shine.
+            </h2>
+            <p class="services-subtitle">
+              Experience transformative beauty treatments tailored to bring out
+              your natural glow.
+            </p>
+          </div>
+          <button type="button" class="services-btn btn-dark">
+            Explore Services →
           </button>
         </div>
-        <div class="card-main">
-          <div class="card">
-            <img
-              src="/images/Hair.png"
-              class="card-img-top"
-              alt="Hair Salon Haven"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Hair Salon Haven</h5>
-              <a href="#" class="btn btn-secondary">Explore Now</a>
+
+        <!-- CARDS SECTION -->
+        <div class="cards-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="card-image">
+              <img
+                src="/images/Hair.png"
+                alt="Hair Salon Haven"
+                class="card-img"
+              />
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Hair Care</span>
+              <h3 class="card-title">Hair Salon Haven</h3>
+              <p class="card-description">
+                Transform your hair with our expert styling, coloring, and
+                treatment services.
+              </p>
+              <a href="#" class="card-btn">
+                Explore Now
+                <span class="arrow">→</span>
+              </a>
             </div>
           </div>
-          <div class="card">
-            <img
-              src="/images/Waxing.png"
-              class="card-img-top"
-              alt="Hair Salon Haven"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Waxing Salon Haven</h5>
-              <a href="#" class="btn btn-secondary">Explore Now</a>
+
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="card-image">
+              <img
+                src="/images/Waxing.png"
+                alt="Waxing Salon Haven"
+                class="card-img"
+              />
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Body Care</span>
+              <h3 class="card-title">Waxing Salon Haven</h3>
+              <p class="card-description">
+                Professional waxing services for smooth, glowing skin with
+                lasting results.
+              </p>
+              <a href="#" class="card-btn">
+                Explore Now
+                <span class="arrow">→</span>
+              </a>
             </div>
           </div>
-          <div class="card">
-            <img
-              src="/images/Skincare.png"
-              class="card-img-top"
-              alt="Hair Salon Haven"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Skincare Salon Haven</h5>
-              <a href="#" class="btn btn-secondary">Explore Now</a>
+
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="card-image">
+              <img
+                src="/images/Skincare.png"
+                alt="Skincare Salon Haven"
+                class="card-img"
+              />
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Skincare</span>
+              <h3 class="card-title">Skincare Salon Haven</h3>
+              <p class="card-description">
+                Rejuvenate your skin with our advanced facial treatments and
+                skincare routines.
+              </p>
+              <a href="#" class="card-btn">
+                Explore Now
+                <span class="arrow">→</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- logo carousel -->
+    <!--======================== logo carousel ============================-->
 
     <section class="logo-section">
       <div class="container-fluid">
@@ -250,96 +389,175 @@
       </div>
     </section>
 
-
-    <!-- featured-section -->
+    <!--======================== featured-section ========================-->
 
     <section class="featured-section">
-  <div class="featured-header">
-    <h2>Featured</h2>
-    <a href="#" class="explore-btn">Explore Collection</a>
-  </div>
+      <div class="container">
+        <!-- HEADER -->
+        <div class="featured-header">
+          <div class="header-text">
+            <h2>Featured<span class="highlight">Collections</span></h2>
+            <p class="subtitle">
+              Discover our curated selection of premium beauty essentials
+            </p>
+          </div>
+          <a href="#" class="explore-btn">Explore Collection →</a>
+        </div>
 
-  <div class="featured-grid">
-    <!-- Card 1 -->
-    <div class="featured-card">
-      <img src="/images/bag.png" alt="Phone Bags">
-      <div class="card-content">
-        <h3>Phone Bags</h3>
-        <a href="#">View Collection <span>→</span></a>
-      </div>
-    </div>
+        <!-- GRID -->
+        <div class="featured-grid">
+          <!-- Card 1 -->
+          <div class="featured-card">
+            <div class="card-image">
+              <img src="/images/bag.png" alt="Phone Bags" />
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <span class="category">Accessories</span>
+              <h3>Phone Bags</h3>
+              <p class="card-desc">
+                Stylish and functional accessories for your daily essentials
+              </p>
+              <a href="#" class="card-link">View Collection<span>→</span></a>
+            </div>
+          </div>
 
-    <!-- Card 2 -->
-    <div class="featured-card">
-      <img src="/images/doris.png" alt="Doris C. Haven">
-      <div class="card-content">
-        <h3>Doris C. Haven</h3>
-        <a href="#">View Collection <span>→</span></a>
-      </div>
-    </div>
+          <!-- Card 2 -->
+          <div class="featured-card">
+            <div class="card-image">
+              <img src="/images/doris.png" alt="Doris C. Haven" />
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <span class="category">Skincare</span>
+              <h3>Doris C. Haven</h3>
+              <p class="card-desc">
+                Luxurious skincare for radiant and glowing complexion
+              </p>
+              <a href="#" class="card-link">View Collection<span>→</span></a>
+            </div>
+          </div>
 
-    <!-- Card 3 -->
-    <div class="featured-card">
-      <img src="/images/jab.png" alt="Jab Jewelries">
-      <div class="card-content">
-        <h3>Jab Jewelries</h3>
-        <a href="#">View Collection <span>→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!--========================= TESTIMONIALS Section ===================-->
-
-<section class="featured">
-  <div class="container">
-
-    <!-- TOP ROW -->
-    <div class="top-row">
-      <div class="story-text">
-        <h2>Our <span>Story</span></h2>
-        <p>
-          Life inside our beauty salon is never a dull moment, and the enthusiasm
-          of wanting to satisfy our customers keeps all of us united.
-        </p>
-      </div>
-
-      <button class="stories-btn">All Our Stories</button>
-    </div>
-
-    <!-- BOTTOM ROW -->
-    <div class="bottom-row">
-      <div class="image-box">
-        <img src="/images/testimonial.png" alt="Story Image" />
-      </div>
-
-      <div class="testimonial">
-        <p class="label">TESTIMONIALS</p>
-        <h3>Daphne Augustine</h3>
-        <span class="role">Accra | Beautician</span>
-
-        <p class="text">
-          Serene Beauty isn’t just any other salon. It’s a complete cut above the
-          rest. Every visit is always a treat and you’re always made to feel
-          special.
-          <br /><br />
-          Sarah never takes her customers for granted and she strives to always
-          deliver something above and beyond ordinary expectations. I cannot
-          recommend Serene Beauty highly enough.
-        </p>
-
-        <div class="pagination">
-          <span class="circle">&#8592;</span>
-          <span>01 | 05</span>
-          <span class="circle">&#8594;</span>
+          <!-- Card 3 -->
+          <div class="featured-card">
+            <div class="card-image">
+              <img src="/images/jab.png" alt="Jab Jewelries" />
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-content">
+              <span class="category">Jewelry</span>
+              <h3>Jab Jewelries</h3>
+              <p class="card-desc">
+                Elegant pieces that complement your natural beauty
+              </p>
+              <a href="#" class="card-link">View Collection<span>→</span></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!--========================= TESTIMONIALS Section ===================-->
 
+    <section class="featured">
+      <div class="container">
+        <!-- TOP ROW -->
+        <div class="top-row">
+          <div class="story-text">
+            <h2>Our <span>Story</span></h2>
+            <p>
+              Life inside our beauty salon is never a dull moment, and the
+              enthusiasm of wanting to satisfy our customers keeps all of us
+              united.
+            </p>
+          </div>
+
+          <button class="stories-btn">All Our Stories</button>
+        </div>
+
+        <!-- BOTTOM ROW -->
+        <div class="bottom-row">
+          <div class="image-box">
+            <img src="/images/testimonial.png" alt="Story Image" />
+          </div>
+
+          <div class="testimonial">
+            <p class="label">TESTIMONIALS</p>
+            <h3>Daphne Augustine</h3>
+            <span class="role">Accra | Beautician</span>
+
+            <p class="text">
+              Serene Beauty isn’t just any other salon. It’s a complete cut
+              above the rest. Every visit is always a treat and you’re always
+              made to feel special.
+              <br /><br />
+              Sarah never takes her customers for granted and she strives to
+              always deliver something above and beyond ordinary expectations. I
+              cannot recommend Serene Beauty highly enough.
+            </p>
+
+            <div class="pagination">
+              <button class="circle" aria-label="Previous testimonial">
+                &#8592;
+              </button>
+              <span>01 | 05</span>
+              <button class="circle" aria-label="Next testimonial">
+                &#8594;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== footer section  ============================-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- TOP FOOTER -->
+        <div class="footer-top">
+          <div class="footer-col">
+            <h4>Brand</h4>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Booking</a></li>
+              <li><a href="#">Exchange & Returns</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+          <div class="logo">S E R E N E<span>B</span>E A U T Y</div>
+
+          <p class="rights">© 2024 Serene Beauty. All rights reserved</p>
+
+          <p class="tagline">
+            Where <span>Tranquility</span> Meets <span>Transformation.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="/assets/bootstrap.bundle.min.js"></script>
   </body>
